@@ -1,0 +1,197 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+// Site header area start
+header#site-header {
+  background-color: darkblue;
+  width: 100%;
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          display: block;
+          padding: 10px 20px;
+          text-decoration: none;
+          text-transform: capitalize;
+          background-color: transparent;
+          color: #fff;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: tomato;
+          }
+        }
+      }
+      li.active {
+        a {
+          background-color: tomato;
+        }
+      }
+    }
+  }
+}
+
+// Site main area start
+main#site-contents {
+  background-color: #fff;
+  padding: 40px 30px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+  
+  // Show students data
+  table {
+    border: 1px solid #ccc;
+    thead {
+      tr {
+        th {
+          padding: 5px 10px;
+          text-transform: capitalize;
+          border: 1px solid #ccc;
+          &:first-child {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 5px 10px;
+          text-transform: capitalize;
+          border: 1px solid #ccc;
+          transition: all 0.2s ease-in-out;
+          a {
+            display: block;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+            i {
+              transition: all 0.2s ease-in-out;
+            }
+          }
+        }
+        td.edit {
+          a {
+            i {
+              color: lightgreen;
+            }
+          }
+          &:hover {
+            background-color: lightgreen;
+            a {
+              i {
+                color: #fff;
+              }
+            }
+          }
+        }
+        td.delete {
+          a {
+            i {
+              color: tomato;
+            }
+          }
+          &:hover {
+            background-color: tomato;
+            a {
+              i {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Create student
+form.create-students {
+  min-width: 500px;
+  fieldset {
+    position: relative;
+    padding: 25px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    legend {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .message {
+      position: absolute;
+      right: 25px;
+      bottom: 8px;
+      p {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: lightgreen;
+        color: green;
+      }
+    }
+  }
+  .field {
+    margin-bottom: 15px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      text-transform: capitalize;
+    }
+    input {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+      text-transform: capitalize;
+      option {
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  button {
+    padding: 8px 10px;
+    background-color: tomato;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 14px;
+  }
+}
+
+// Site footer area start
+footer#site-footer {
+  background-color: darkblue;
+  width: 100%;
+  text-align: center;
+  p {
+    color: #fff;
+  }
+}

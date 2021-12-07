@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <!-- Header area start -->
+  <header id="site-header">
+    <nav>
+      <ul>
+        <li class="active"><a href="./index.html">show students</a></li>
+        <li><a href="./create-student.html">add student</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header area end -->
+
+  <!-- Main area start -->
+  <main id="site-contents">
+    <form class="create-students" action="#" method="POST">
+      <fieldset>
+        <legend>update student</legend>
+        <div class="field">
+          <label for="fname">full name</label>
+          <input type="text" id="fname" name="fname" placeholder="Enter student name">
+        </div>
+
+        <div class="field">
+          <label for="phone">phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter student phone">
+        </div>
+
+        <div class="field">
+          <label for="gender">gender</label>
+          <select name="gender" id="gender">
+            <option value="selected" selected disabled>select</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="city">city</label>
+          <input type="text" id="city" name="city" placeholder="Enter student city">
+        </div>
+
+        <button>create student</button>
+        <div class="message">
+          <p>Student created successfuly!</p>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+  <!-- Main area end -->
+
+  <!-- Footer area start -->
+  <footer id="site-footer">
+    <p>&copy; 2021 All Rights Reseved by Imran</p>
+  </footer>
+  <!-- Footer area end -->
+</body>
+
+</html>
